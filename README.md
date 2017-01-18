@@ -26,4 +26,4 @@
 3. Download and install Vagrant
 4. Use vagrant box called maxx/ubuntu16.
   4a. If on internal net, the box can be added by running "vagrant box add maxx/ubuntu16 <path>"
- 
+5. When running vagrant up, specify provider using --provider=hyperv
