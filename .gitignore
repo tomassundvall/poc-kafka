@@ -1,3 +1,8 @@
 .vagrant/
 *.swp
 *.log
+roles/sansible.kafka/
+roles/sansible.users_and_groups/
+roles/sansible.zookeeper/
+roles/yatesr.timezone/
+

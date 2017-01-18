@@ -1,0 +1,7 @@
+---
+- src: sansible.kafka
+  version: v1.0.8
+- src: sansible.zookeeper
+  version: v1.0.8
+- src: yatesr.timezone
+  version: 1.0.0
