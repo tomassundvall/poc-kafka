@@ -7,6 +7,13 @@ Vagrant.configure("2") do |config|
     override.vm.box = "maxx/ubuntu16"
   end
 
+  #
+  # Run Ansible from the Vagrant Host
+  #
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "main.yaml"
+  end
+  
   config.vm.define 'n1' do |n1|
     n1.vm.hostname = 'n1'
     n1.vm.network "private_network", ip: "172.20.20.10"
