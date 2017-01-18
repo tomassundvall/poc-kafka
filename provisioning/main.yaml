@@ -4,6 +4,9 @@
 
   roles:
     - ufw
+    - yatesr.timezone
+    - sansible.kafka
+    - sansible.zookeeper
 
   tasks:
     - name: Update and upgrade packages
@@ -12,7 +15,6 @@
     - name: Configure vm.swappiness
       lineinfile: dest=/etc/sysctl.conf line="vm.swappiness = 0" regexp="^vm.swappiness[\s]?=" state=present
 
-      
     - name: Enable unattended security updates
       lineinfile:
         dest: /etc/apt/apt.conf.d/10periodic
