@@ -3,16 +3,16 @@
   become: True
 
   roles:
-    - role: kamaln7.swapfile
-      swapfile_swappiness: 10
-      swapfile_location: /swapfile
-
     - ufw
 
   tasks:
     - name: Update and upgrade packages
       apt: update_cache=yes cache_valid_time=3600 upgrade=dist
 
+    - name: Configure vm.swappiness
+      lineinfile: dest=/etc/sysctl.conf line="vm.swappiness = 0" regexp="^vm.swappiness[\s]?=" state=present
+
+      
     - name: Enable unattended security updates
       lineinfile:
         dest: /etc/apt/apt.conf.d/10periodic

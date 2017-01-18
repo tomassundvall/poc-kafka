@@ -1,7 +1,5 @@
 # Ansible Bootstrap
 
-Used with Ubuntu 14.04 on Digital Ocean. Uses git submodules; clone with `--recursive`.
-
 1. Create a file called `hosts` in the checkout folder and populate it with server IP(s).
 
 2. Configure variables in [group_vars/all](group_vars/all).
