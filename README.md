@@ -1,1 +1,1 @@
-# poc-kafka
+# Kafka Proof of Concept repository## TODO - [ ] Vagrantfile that works in both VirtualBox and HyperV - [ ] Ansible bootstrap for Ubuntu   - [ ] Inventory file - [ ] The nodes   - [ ] 3 Zookeeper + Kafka   - [ ] Schema registry - [ ] Roles   - [ ] Kafka   - [ ] Zookeeper   - [ ] Op5/Consul   - [ ] SSH   - [ ] SSH Keys   - [ ] apt   - [ ] apt security updates   - [ ] auditd   - [ ] ntpd
