@@ -26,24 +26,22 @@ ansible.
 
 ## TODO
 
- - [ ] Vagrantfile that works in both VirtualBox and HyperV
  - [ ] Ansible bootstrap for Ubuntu
    - [ ] Inventory file
  - [ ] The nodes
-   - [ ] 3 Zookeeper + Kafka
+   - [x] 3 Zookeeper + Kafka
    - [ ] Schema registry
  - [ ] Roles
    - [ ] Kafka
+     - [ ] Upgrade repo from `requirements.txt` to Ubuntu 16.04 (SystemD)
    - [ ] Zookeeper
-   - [ ] Op5/Consul
+     - [ ] Upgrade repo from `requirements.txt` to Ubuntu 16.04 (SystemD)
    - [ ] SSH
    - [ ] SSH Keys
    - [ ] apt
-   - [ ] apt security updates
+   - [x] apt security updates
    - [ ] auditd
    - [ ] ntpd
-
-
 
  [ansible-docs]: https://docs.ansible.com/
  [ansible-galaxy]: https://docs.ansible.com/ansible/galaxy.html

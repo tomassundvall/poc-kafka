@@ -5,13 +5,18 @@
   roles:
     - ufw
     - yatesr.timezone
-    - sansible.kafka
-    - sansible.zookeeper
+    - ansiblebit.oracle-java
+
+  pre_tasks:
+    - name: Update apt
+      become: yes
+      apt:
+        cache_valid_time: 1800
+        update_cache: yes
+      tags:
+        - build
 
   tasks:
-    - name: Update and upgrade packages
-      apt: update_cache=yes cache_valid_time=3600 upgrade=dist
-
     - name: Configure vm.swappiness
       lineinfile: dest=/etc/sysctl.conf line="vm.swappiness = 0" regexp="^vm.swappiness[\s]?=" state=present
 

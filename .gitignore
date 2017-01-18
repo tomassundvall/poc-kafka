@@ -6,3 +6,7 @@ roles/sansible.users_and_groups/
 roles/sansible.zookeeper/
 roles/yatesr.timezone/
 
+roles/ansible-kafka/
+roles/ansible-zookeeper/
+roles/ansiblebit.launchpad-ppa-webupd8/
+roles/ansiblebit.oracle-java/

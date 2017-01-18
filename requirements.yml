@@ -1,7 +1,9 @@
 ---
-- src: sansible.kafka
+- src: git+https://github.com/haf/ansible-kafka.git
   version: v1.0.8
-- src: sansible.zookeeper
+- src: git+https://github.com/haf/ansible-zookeeper.git
   version: v1.0.8
 - src: yatesr.timezone
   version: 1.0.0
+- src: ansiblebit.oracle-java
+  version: 4.14.4
