@@ -58,5 +58,5 @@ sudo mkdir /opt/Kafka
 cd /opt/Kafka
 sudo tar -xvf kafka_2.10-0.10.1.1.tgz -C /opt/Kafka/
 sudo  /opt/Kafka/kafka_2.10-0.10.1.1/bin/kafka-server-start.sh /opt/Kafka/kafka_2.10-0.10.1.1/config/server.properties
-
+.
 
